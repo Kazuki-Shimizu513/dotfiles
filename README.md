@@ -1,4 +1,4 @@
-# Mathias’s dotfiles
+# KAZUKI's (Mathias’s) dotfiles
 
 ![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
 
