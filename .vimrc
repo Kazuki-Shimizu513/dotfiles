@@ -162,16 +162,31 @@ Plug 'preservim/nerdtree'|
 " Comment stuff out. Use gcc to comment out a line (takes a count), gc to comment out the target of a motion (for example, gcap to comment out a paragraph), gc in visual mode to comment out the selection, and gc in operator pending mode to target a comment.
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
+" for Looking Good vim editor
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " A collection of language packs for Vim. Best syntax and indentation support
 " (no other features). Hand-selected language packs.
 Plug 'sheerun/vim-polyglot'
-
+" LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+" For enable to edit md file in this vim editor
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+" plugin for live html, css, and javascript editing in vim. :Bracey, :BraceyStop, 
+Plug 'turbio/bracey.vim'
 Plug 'alvan/vim-closetag'
+"Plug 'vim-test/vim-test'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'
+"python completion Completion <C-Space>
+Plug 'davidhalter/jedi-vim'
+
+
+
+
+
+
+
 
 call plug#end()
 "After adding the above to the top of your Vim configuration file, reload it (:source ~/.vimrc) or restart Vim. Now run :PlugInstall to install the plugins.
@@ -212,7 +227,8 @@ let NERDTreeShowHidden=1
 " NERDTreeMapOpenInTab	t	Open selected files in tabs.
 
 " AIrLine settings
-let g:airline_theme='molokai'
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -222,7 +238,7 @@ let g:airline#extensions#tabline#formatter = 'default'
 
 
 " coc settings
-let g:coc_global_extensions = ['coc-json', 'coc-git']
+"let g:coc_global_extensions = ['coc-json', 'coc-git']
 " Mappings for CoCList
 " Show all diagnostics
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
@@ -241,4 +257,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+
+"Bracey settings
+let g:bracey_browser_command =1 " (string) command used to launch browser
 
