@@ -162,6 +162,7 @@ Plug 'preservim/nerdtree'|
 " Comment stuff out. Use gcc to comment out a line (takes a count), gc to comment out the target of a motion (for example, gcap to comment out a paragraph), gc in visual mode to comment out the selection, and gc in operator pending mode to target a comment.
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
+Plug 'luochen1990/rainbow'
 " for Looking Good vim editor
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -226,7 +227,12 @@ let NERDTreeShowHidden=1
 " NERDTreeMapOpenVSplit	s	Open selected files in vertical splits.
 " NERDTreeMapOpenInTab	t	Open selected files in tabs.
 
-" AIrLine settings
+" for reinbow parentheses 
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+
+
+
+"AirLine settings
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 let g:airline#extensions#tabline#enabled = 1
