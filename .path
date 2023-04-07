@@ -1,4 +1,10 @@
 # $PATH
 
 export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+export PATH="~/.local/share/pypoetry/venv/bin/poetry:$PATHi"
+
+
 
