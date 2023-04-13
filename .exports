@@ -35,3 +35,8 @@ export GPG_TTY=$(tty);
 
 # Hide the “default interactive shell is now zsh” warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;
+
+
+export LDFLAGS="-L/usr/local/opt/llvm@9/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm@9/include"
+export LLVM_CONFIG=/usr/local/Cellar/llvm@9/9.0.1_2/bin/llvm-config
