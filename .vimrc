@@ -75,6 +75,7 @@ set incsearch
 set laststatus=2
 " Enable mouse in all modes
 set mouse=a
+set ttymouse=xterm2
 " Disable error bells
 set noerrorbells
 " Don’t reset cursor to start of line when moving around.
