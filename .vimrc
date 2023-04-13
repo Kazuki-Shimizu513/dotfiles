@@ -1,5 +1,6 @@
 " Use the Solarized Dark theme
 set background=dark
+"set background=light
 colorscheme solarized
 let g:solarized_termtrans=1
 
@@ -163,22 +164,30 @@ Plug 'preservim/nerdtree'|
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow'
+
 " for Looking Good vim editor
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'altercation/vim-colors-solarized'
+Plug 'ryanoasis/nerd-fonts'
+
 " A collection of language packs for Vim. Best syntax and indentation support
 " (no other features). Hand-selected language packs.
 Plug 'sheerun/vim-polyglot'
+
 " LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " For enable to edit md file in this vim editor
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+
 " plugin for live html, css, and javascript editing in vim. :Bracey, :BraceyStop, 
 Plug 'turbio/bracey.vim'
 Plug 'alvan/vim-closetag'
 "Plug 'vim-test/vim-test'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
+"
 "python completion Completion <C-Space>
 Plug 'davidhalter/jedi-vim'
 
@@ -218,9 +227,20 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Clean'     :'✔︎',
                 \ 'Unknown'   :'?',
                 \ }
-let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
-"set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
+
+"  you should install nerdfonts by yourself. default: 0
+let g:NERDTreeGitStatusUseNerdFonts = 1 
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
 let NERDTreeShowHidden=1
+set encoding=utf-8
+
+" フォルダアイコンを表示
+let g:WebDevIconsNerdTreeBeforeGlyphPadding = ""
+let g:WebDevIconsUnicodeDecorateFolderNodes = v:true
+" after a re-source, fix syntax matching issues (concealing brackets):
+if exists('g:loaded_webdevicons')
+  call webdevicons#refresh()
+endif
 
 " NERDTreeMapActivateNode	o	Open selected files.
 " NERDTreeMapOpenSplit	i	Open selected files in horizontal splits.
