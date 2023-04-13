@@ -191,8 +191,8 @@ Plug 'alvan/vim-closetag'
 "
 "python completion Completion <C-Space>
 Plug 'davidhalter/jedi-vim'
-
-
+# enable copilot      Use  :Copilot split
+Plug 'github/copilot.vim'
 
 
 
