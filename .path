@@ -15,3 +15,5 @@ eval "$(pyenv init --path)"
 
 export PATH="/usr/local/opt/llvm@9/bin:$PATH"
 
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
