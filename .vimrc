@@ -179,6 +179,7 @@ Plug 'sheerun/vim-polyglot'
 " LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+
 " For enable to edit md file in this vim editor
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 
