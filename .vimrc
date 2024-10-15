@@ -184,8 +184,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 
 " plugin for live html, css, and javascript editing in vim. :Bracey, :BraceyStop, 
-Plug 'turbio/bracey.vim'
+Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
+
 Plug 'alvan/vim-closetag'
+
 "Plug 'vim-test/vim-test'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
@@ -267,8 +269,8 @@ let g:airline#extensions#tabline#formatter = 'default'
 
 
 
-" coc settings
-let g:coc_global_extensions = ['coc-json', 'coc-git']
+" coc extention settings
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-lists', 'coc-jedi', 'coc-spell-checker', 'coc-clangd', 'coc-highlight', 'coc-java', 'coc-sh', 'coc-rust-analyzer', 'coc-texlab', 'coc-toml', 'coc-tsserver', 'coc-xml', 'coc-yaml' ]
 " Mappings for CoCList
 " Show all diagnostics
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
@@ -289,8 +291,12 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 
 "Bracey settings
-let g:bracey_browser_command =1 " (string) command used to launch browser
-
+"" (string) command used to launch browser
+let g:bracey_browser_command =1 
+" whether or not to start the browser  when bracey is started
+let g:bracey_auto_start_browser = 1
+let g:bracey_eval_on_save = 1
+let g:bracey_server_allow_remote_connections = 1
 
 
 
