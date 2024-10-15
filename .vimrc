@@ -193,8 +193,8 @@ Plug 'alvan/vim-closetag'
 "Plug 'junegunn/fzf.vim'
 "
 "python completion Completion <C-Space>
-Plug 'davidhalter/jedi-vim'
-Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }
+" Plug 'davidhalter/jedi-vim'
+" Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }
 
 "Enable copilot Use :Copilot split
 Plug 'github/copilot.vim'
