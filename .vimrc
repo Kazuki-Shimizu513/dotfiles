@@ -52,7 +52,7 @@ set secure
 " Enable line numbers
 set number
 " Enable syntax highlighting
-syntax on
+set syntax=enable
 " Highlight current line
 set cursorline
 " Put spaces when I start new Line
