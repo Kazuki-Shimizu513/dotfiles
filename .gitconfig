@@ -181,3 +181,9 @@
 [init]
 
 	defaultBranch = main
+
+
+[usr]
+	name = "Kazuki Shimizu"
+	email = "kazukimacbook19980513@gmail.com"
+

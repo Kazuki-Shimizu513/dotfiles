@@ -47,3 +47,6 @@ export LLVM_CONFIG="/usr/local/Cellar/llvm@9/9.0.1_2/bin/llvm-config"
 export LD_LIBRARY_PATH="/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 
+
+export NVM_DIR="$HOME/.nvm"
+
